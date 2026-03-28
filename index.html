@@ -8,70 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      /* Modern, dignified palette */
-      --navy:#0b2a4a;          /* primary */
-      --slate:#2f3a44;         /* body text */
-      --stone:#f4f5f7;         /* light bg */
-      --cloud:#ffffff;         /* white */
-      --gold:#c3a763;          /* accent */
-      --sage:#e7ede8;          /* soft accent bg */
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;color:var(--slate);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    h1,h2,h3{font-family:"Libre Baskerville", Georgia, serif;color:var(--navy);margin:0 0 .5rem}
-    a{color:var(--navy);text-decoration:none}
-    a:hover{opacity:.9}
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
-
-    /* Header */
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #e5e7eb}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:.75rem}
-    .logo{width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,var(--navy),#1b3d63);display:grid;place-items:center;color:var(--cloud);font-weight:700}
-    .brand-text{display:flex;flex-direction:column;line-height:1.1}
-    .brand-text .title{font-weight:700;letter-spacing:.2px;color:var(--navy)}
-    .brand-text .subtitle{font-size:.82rem;color:#6b7280}
-
-    .menu{display:flex;gap:1.25rem}
-    .menu a{font-weight:600}
-    .cta{background:var(--navy);color:var(--cloud);padding:.65rem 1rem;border-radius:10px;font-weight:700}
-    .cta.secondary{background:var(--gold);color:#1f2937}
-
-    /* Hero */
-    .hero{background:linear-gradient(180deg,rgba(11,42,74,.08),rgba(11,42,74,.02)), url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;}
-    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;min-height:72vh}
-    .badge{display:inline-flex;gap:.5rem;align-items:center;background:var(--sage);color:#334155;border:1px solid #d2d8d3;border-radius:999px;padding:6px 12px;font-size:.85rem;font-weight:600}
-    .hero h1{font-size:clamp(2rem,5vw,3.2rem)}
-    .hero p{font-size:1.05rem;line-height:1.7;color:#334155;margin:.8rem 0 1.2rem}
-    .hero-actions{display:flex;gap:.75rem;flex-wrap:wrap}
-
-    /* Info cards */
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
-    .card{background:var(--cloud);border:1px solid #e5e7eb;border-radius:16px;padding:1.25rem}
-    .card h3{margin-bottom:.35rem}
-    .card p{margin:.25rem 0 0;color:#4b5563}
-
-    /* Section blocks */
-    section{padding:64px 0}
-    .split{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-    .panel{background:var(--stone);border:1px solid #eceff3;border-radius:16px;padding:1.5rem}
-
-    /* Footer */
-    footer{background:var(--navy);color:#e5e7eb;padding:40px 0;margin-top:24px}
-    footer a{color:#e5e7eb}
-    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem}
-    .small{font-size:.9rem;color:#cdd6df}
-
-    /* Responsive */
-    @media (max-width: 900px){
-      .hero .wrap{grid-template-columns:1fr}
-      .cards{grid-template-columns:1fr}
-      .split{grid-template-columns:1fr}
-      .menu{display:none}
-    }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <header>
@@ -86,10 +23,10 @@
       <nav class="menu" aria-label="Primary Navigation">
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#plan">Plan Ahead</a>
+        <a href="https://www.findagrave.com" target="_blank" rel="noopener noreferrer">Find a Grave</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
-        <a class="cta" href="https://www.paypal.com/donate/?hosted_button_id=REPLACE_WITH_YOUR_ID" target="_blank" rel="noopener noreferrer">Donate</a>
+        <a class="cta" href="https://www.paypal.com/donate/?campain_id=5T7CBUN-L6ZWSE" target="_blank">Donate</a>
       </nav>
     </div>
   </header>
@@ -99,13 +36,8 @@
     <section class="hero">
       <div class="container wrap">
         <div>
-          <span class="badge" aria-label="Nonprofit Cemetery Organization">Preservation • Community • Care</span>
           <h1>Honoring History, Serving Families</h1>
           <p>Dedicated to the preservation and respectful care of our community’s resting place. We provide transparent governance, dignified services, and stewardship of the grounds for generations to come.</p>
-          <div class="hero-actions">
-            <a class="cta" href="#services">Explore Services</a>
-            <a class="cta secondary" href="#about">Our Mission</a>
-          </div>
         </div>
         <div class="cards">
           <div class="card">
@@ -134,7 +66,7 @@
         </div>
         <div class="panel">
           <h3>Quick Facts</h3>
-          <p>• Nonprofit 501(c)(13)<br>• Est. 19th century, chapel 1929<br>• Executive Director-led operations<br>• Board-approved bylaws (2025)</p>
+          <p>• Nonprofit 501(c)(13)<br>• Est. 19th century, chapel 1929<br>• Executive Director-led operations</p>
         </div>
       </div>
     </section>
@@ -156,24 +88,6 @@
             <h3>Chapel Services</h3>
             <p>Quiet, intimate space for services and commemoration at the Harwood Chapel.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Plan Ahead -->
-    <section id="plan">
-      <div class="container split">
-        <div>
-          <h2>Plan Ahead</h2>
-          <p>Planning in advance eases decision-making and ensures your wishes are honored. Our team can help with lot selection, memorial options, and care arrangements.</p>
-          <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.5rem">
-            <a class="cta" href="#contact">Request Information</a>
-            <a class="cta secondary" href="#">View Bylaws</a>
-          </div>
-        </div>
-        <div class="panel">
-          <h3>What to Prepare</h3>
-          <p>• Preferred section or memorial style<br>• Family lot details (if applicable)<br>• Chapel service preferences<br>• Any special accommodation needs</p>
         </div>
       </div>
     </section>
@@ -209,7 +123,7 @@
         </div>
         <div id="contact" class="panel">
           <h3>Contact</h3>
-          <p>Email: info@staffordspringscemetery.org<br>Phone: (xxx) xxx-xxxx<br>Location: Stafford Springs, CT</p>
+          <p>Email: jeremy@staffordspringscemetery.org<br>Phone: (303) 881-3125<br>Location: Monson Rd., Stafford Springs, CT</p>
         </div>
       </div>
     </section>
@@ -223,7 +137,7 @@
         <p class="small">© <span id="year"></span> Stafford Springs Cemetery. All rights reserved.</p>
       </div>
       <div>
-        <p><a href="#about">About</a><br><a href="#services">Services</a><br><a href="#plan">Plan Ahead</a></p>
+        <p><a href="#about">About</a><br><a href="#services">Services</a><br><a href="https://www.findagrave.com" target="_blank" rel="noopener noreferrer">Find a Grave</a></p>
       </div>
       <div>
         <p><a href="#news">News</a><br><a href="#donate">Donate</a><br><a href="#contact">Contact</a></p>

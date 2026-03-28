@@ -1,0 +1,17 @@
+{
+  "name": "stafford-cemetery-repo",
+  "version": "1.0.0",
+  "description": "Stafford Cemetery project",
+  "scripts": {
+    "sass-watch": "sass --watch index.scss:index.css",
+    "sass-build": "sass index.scss index.css",
+    "start": "concurrently \"sass --watch index.scss:index.css\" \"live-server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.0"
+  }
+}
