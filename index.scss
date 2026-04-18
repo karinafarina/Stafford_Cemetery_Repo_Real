@@ -121,21 +121,45 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 545px;
+    justify-content: flex-start;
+    max-width: 550px;
     min-height: 70vh;
+    padding-top: 12px;
     
+    .text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background: rgba(244, 245, 247, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 3rem 2.5rem;
+      border-radius: 12px;
+      border: 1px solid rgba(244, 245, 247, 0.2);
+      margin-left: 30px;
+      margin-right: 5px;
+    }
   }
 
   h1 {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    color: var(--cloud)
+    font-size: clamp(2rem, 5.5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--cloud);
+    margin: 0 0 7rem 0;
+    max-width: 600px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   p {
-    font-size: 1.05rem;
-    line-height: 1.7;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-family: "Libre Baskerville", Georgia, serif;
+    line-height: 1.8;
     color: var(--cloud);
-    margin: .8rem 0 1.2rem;
+    margin: 0;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), 0 3px 10px rgba(0, 0, 0, 0.3);
   }
 }
 
