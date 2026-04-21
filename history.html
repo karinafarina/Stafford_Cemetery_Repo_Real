@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>History - Stafford Springs Cemetery</title>
+  <meta name="description" content="The complete history of Stafford Springs Cemetery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">SS</div>
+        <div class="brand-text">
+          <span class="title">Stafford Springs Cemetery</span>
+          <span class="subtitle">Stafford Springs Cemetery Association</span>
+        </div>
+      </div>
+      <nav class="menu" aria-label="Primary Navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="https://www.findagrave.com" target="_blank" rel="noopener noreferrer">Find a Grave</a>
+        <a href="index.html#news">News</a>
+        <a href="index.html#contact">Contact</a>
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="campaign_id" value="5T7CBUNL6ZWSE" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- History -->
+    <section style="background:var(--stone)">
+      <div class="container wrap">
+        <h1>Our History</h1>
+        <p>Stafford Springs Cemetery has served our community for over a century, preserving the legacy of those who helped shape the area's early development. As a nonprofit 501(c)(13) corporation, we remain committed to honoring the memory of all those who rest within our grounds.</p>
+        
+        <h2>Early Years</h2>
+        <p>Founded in the 19th century, Stafford Springs Cemetery has been a cornerstone of our community's heritage. The grounds were carefully established to provide a peaceful, dignified resting place for families and their loved ones.</p>
+        
+        <h2>The Harwood Chapel</h2>
+        <p>In 1929, the Harwood Chapel was constructed, creating a quiet and intimate space for memorial services and celebrations of life. This architectural landmark remains a cherished part of our cemetery's identity and continues to serve families during their time of need.</p>
+        
+        <h2>Ongoing Stewardship</h2>
+        <p>Throughout the decades, Stafford Springs Cemetery has maintained its commitment to preservation, accessibility, and dignity. Our nonprofit governance ensures transparent stewardship, strong ethical standards, and long-term sustainability for generations to come.</p>
+        
+        <p><a href="index.html#about">← Back to Home</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Stafford Springs Cemetery</strong>
+        <p class="small">A nonprofit, tax-exempt cemetery corporation (IRC § 501(c)(13)).</p>
+        <p class="small">© <span id="year"></span> Stafford Springs Cemetery. All rights reserved.</p>
+      </div>
+      <div>
+        <p><a href="index.html#about">About</a><br><a href="index.html#services">Services</a><br><a href="https://www.findagrave.com" target="_blank" rel="noopener noreferrer">Find a Grave</a></p>
+      </div>
+      <div>
+        <p>
+          <a href="index.html#news">News</a><br>
+          <a href="index.html#contact">Contact</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
