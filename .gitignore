@@ -1,0 +1,20 @@
+# Sass cache
+.sass-cache/
+*.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if used)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
