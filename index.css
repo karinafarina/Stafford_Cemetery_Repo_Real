@@ -79,6 +79,11 @@ header {
   display: block;
 }
 
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
 .brand-text .title {
   font-weight: 700;
   letter-spacing: 0.2px;
@@ -227,7 +232,7 @@ footer a {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
   gap: 2rem;
 }
 
@@ -242,6 +247,9 @@ footer a {
     grid-template-rows: 1fr;
   }
   .cards {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
     grid-template-columns: 1fr;
   }
   .split {
