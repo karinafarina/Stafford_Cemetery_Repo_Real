@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Stafford Springs Cemetery</title>
+  <rect x="8" y="12" width="104" height="96" rx="12" fill="#f9f8f5" stroke="#2f3a44" stroke-width="4"/>
+  <path d="M24 32h72" fill="none" stroke="#2f3a44" stroke-width="4" stroke-linecap="round"/>
+  <path d="M30 42h60" fill="none" stroke="#2f3a44" stroke-width="3" stroke-linecap="round"/>
+  <path d="M28 92h64" fill="none" stroke="#2f3a44" stroke-width="3" stroke-linecap="round"/>
+  <rect x="34" y="48" width="52" height="34" rx="4" fill="#ffffff" stroke="#2f3a44" stroke-width="3"/>
+  <path d="M40 50v28" fill="none" stroke="#2f3a44" stroke-width="3"/>
+  <path d="M54 50v28" fill="none" stroke="#2f3a44" stroke-width="3"/>
+  <path d="M68 50v28" fill="none" stroke="#2f3a44" stroke-width="3"/>
+  <path d="M82 50v28" fill="none" stroke="#2f3a44" stroke-width="3"/>
+  <text x="60" y="86" text-anchor="middle" font-family="Libre Baskerville, Georgia, serif" font-size="14" fill="#2f3a44">1882</text>
+</svg>
