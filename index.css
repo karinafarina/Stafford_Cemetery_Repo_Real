@@ -97,9 +97,15 @@ header {
 .menu {
   display: flex;
   gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .menu a {
   font-weight: 600;
+  white-space: nowrap;
+}
+.menu form {
+  margin: 0;
 }
 
 .cta {
@@ -182,7 +188,7 @@ header {
 /* Info cards */
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
   margin: 2.5rem 0;
 }
@@ -256,7 +262,215 @@ footer a {
     grid-template-columns: 1fr;
   }
   .menu {
-    display: none;
+    gap: 0.75rem;
+  }
+
+  .brand-text .title {
+    font-size: 1rem;
+  }
+  .brand-text .subtitle {
+    font-size: 0.75rem;
+  }
+
+  section {
+    padding: 48px 0;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 12px 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .brand {
+    gap: 0.5rem;
+    flex-basis: 100%;
+  }
+
+  .logo {
+    width: 40px;
+    height: 48px;
+  }
+
+  .menu {
+    width: 100%;
+    gap: 0.5rem;
+    order: 3;
+  }
+
+  .menu form input[type="image"] {
+    width: 110px;
+    height: auto;
+  }
+
+  .brand-text .title {
+    font-size: 0.95rem;
+  }
+  .brand-text .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .hero .wrap .text {
+    padding: 2rem 1.5rem;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    margin: 0 0 3rem 0;
+  }
+
+  .hero p {
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .panel {
+    padding: 1.25rem;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 10px 0;
+    gap: 0.75rem;
+  }
+
+  .brand {
+    gap: 0.4rem;
+  }
+
+  .logo {
+    width: 36px;
+    height: 44px;
+  }
+
+  .brand-text .title {
+    font-size: 0.85rem;
+    letter-spacing: 0;
+  }
+  .brand-text .subtitle {
+    font-size: 0.65rem;
+  }
+
+  .menu {
+    gap: 0.4rem;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .menu form input[type="image"] {
+    width: 90px;
+    height: auto;
+  }
+
+  .hero .wrap {
+    min-height: 50vh;
+    padding-top: 8px;
+  }
+
+  .hero .wrap .text {
+    padding: 1.5rem 1rem;
+    margin-left: 10px;
+    margin-right: 0;
+    border-radius: 8px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.25rem, 3.5vw, 1.8rem);
+    margin: 0 0 2rem 0;
+  }
+
+  .hero p {
+    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  }
+
+  section {
+    padding: 32px 0;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .cards {
+    gap: 0.75rem;
+    margin: 2rem 0;
+  }
+
+  .card {
+    padding: 0.875rem;
+    border-radius: 12px;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .panel {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .container {
+    padding: 0 14px;
+  }
+
+  .cta {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .learn-more {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    margin-top: 12px;
+  }
+
+  .footer-grid {
+    gap: 1.5rem;
+  }
+
+  footer {
+    padding: 32px 0;
+  }
+
+  .small {
+    font-size: 0.85rem;
   }
 }
 
