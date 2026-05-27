@@ -152,7 +152,8 @@
           <div class="card">
             <h3>Annual Meeting</h3>
               <p>June 9, 2026 – 6:00 PM, Stafford Public Library, 10 Levinthal Run, Stafford Springs, CT 06076</p>
-          </div>
+              <p>(Lot owners welcome)</p>
+            </div>
           <div class="card">
             <h3>Preservation Projects</h3>
             <p>Ongoing monument stabilization and grounds restoration efforts.</p>
@@ -220,6 +221,25 @@
         menuToggle.setAttribute('aria-expanded', String(isOpen));
         menuToggle.querySelector('.sr-only').textContent = isOpen ? 'Close navigation menu' : 'Open navigation menu';
       });
+
+      // Close menu when a menu item is clicked (mobile only)
+      const closeMenu = () => {
+        navMenu.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.querySelector('.sr-only').textContent = 'Open navigation menu';
+      };
+
+      // Add click listeners to all menu links
+      navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      // Also close menu when form is interacted with
+      const menuForm = navMenu.querySelector('form');
+      if (menuForm) {
+        menuForm.addEventListener('submit', closeMenu);
+        menuForm.querySelector('input[type=image]').addEventListener('click', closeMenu);
+      }
     }
 
     document.getElementById('year').textContent = new Date().getFullYear();
