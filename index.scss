@@ -263,6 +263,7 @@ header {
 /* Section blocks */
 section {
   padding: 64px 0;
+  scroll-margin-top: 100px;
 }
 
 .split {
@@ -324,6 +325,17 @@ footer {
 
   .split {
     grid-template-columns: 1fr;
+    
+    > div {
+      min-width: 0;
+      overflow-x: hidden;
+    }
+  }
+
+  .panel {
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .menu-toggle {
@@ -372,4 +384,45 @@ footer {
       font-size: .75rem;
     }
   } 
+}
+
+@media (max-width: 600px) {
+.brand-text {
+    font-size: .9rem; 
+    .subtitle {
+      font-size: .7rem;
+    }
+  }
+
+  form {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  form input[type="image"] {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #donate {
+    overflow-x: hidden;
+  }
+
+  #donate .split > div {
+    min-width: 0;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .panel {
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  .panel p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 }

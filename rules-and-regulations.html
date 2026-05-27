@@ -22,7 +22,13 @@
           <span class="subtitle">Stafford Springs Cemetery Association</span>
         </div>
       </div>
-      <nav class="menu" aria-label="Primary Navigation">
+      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" type="button">
+        <span class="sr-only">Open navigation menu</span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="menu" id="primary-menu" aria-label="Primary Navigation">
         <a href="index.html#about">About</a>
         <a href="index.html#services">Services</a>
         <a href="https://www.findagrave.com" target="_blank" rel="noopener noreferrer">Find a Grave</a>
@@ -169,5 +175,37 @@
     <a href="index.html" class="learn-more">← Back to Home</a>
   </div>
 </main>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.menu');
+
+    if (menuToggle && navMenu) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        menuToggle.querySelector('.sr-only').textContent = isOpen ? 'Close navigation menu' : 'Open navigation menu';
+      });
+
+      // Close menu when a menu item is clicked (mobile only)
+      const closeMenu = () => {
+        navMenu.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.querySelector('.sr-only').textContent = 'Open navigation menu';
+      };
+
+      // Add click listeners to all menu links
+      navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      // Also close menu when form is interacted with
+      const menuForm = navMenu.querySelector('form');
+      if (menuForm) {
+        menuForm.addEventListener('submit', closeMenu);
+        menuForm.querySelector('input[type=image]').addEventListener('click', closeMenu);
+      }
+    }
+  </script>
 </body>
 </html>
