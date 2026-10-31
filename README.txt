@@ -1,6 +1,13 @@
 # Stafford Springs Cemetery - Website (Static HTML)
 This package contains a static homepage ready for Bluehost.
 
+## Local Development
+1. Run `npm install` to install the development tools.
+2. Run `npm run sass-watch` to compile and watch the SCSS files.
+   - `index.scss` compiles to `index.css`.
+   - `rules-and-regs.scss` compiles to `rules-and-regulations.css`.
+3. Alternatively, run `npm start` to watch Sass and serve the site locally.
+
 ## Files
 - index.html
 
