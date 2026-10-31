@@ -8,14 +8,14 @@
   <title>History of Stafford Springs Cemetery</title>
   <style>
     :root {
-      --stone: #2f3432;
-      --slate: #4f5b56;
-      --soft-stone: #f4f1ec;
-      --warm-white: #fffdf8;
-      --line: #d8d0c4;
-      --accent: #7b6f58;
+      --stone: #262a28;
+      --slate: #5e6561;
+      --soft-stone: #f5f6f3;
+      --warm-white: #fff;
+      --line: #dce2dd;
+      --accent: #2f5241;
       --navy: #0b2a4a;
-      --cloud: #fffdf8;
+      --cloud: #fff;
     }
 
     * { box-sizing: border-box; }
@@ -24,60 +24,59 @@
       margin: 0;
       background: var(--soft-stone);
       color: var(--stone);
-      font-family: Georgia, 'Times New Roman', serif;
-      line-height: 1.65;
+      font-family: Aptos, Arial, Helvetica, sans-serif;
+      line-height: 1.7;
     }
 
     .history-section {
-      max-width: 980px;
+      max-width: 1040px;
       margin: 0 auto;
-      padding: 64px 24px;
+      padding: 56px 24px;
     }
 
     .history-card {
       background: var(--warm-white);
       border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 54px;
-      box-shadow: 0 18px 45px rgba(47, 52, 50, 0.10);
+      border-radius: 12px;
+      padding: 48px 54px;
+      box-shadow: 0 12px 32px rgba(38, 42, 40, 0.07);
     }
 
     .eyebrow {
-      margin: 0 0 10px;
+      margin: 0 0 8px;
       color: var(--accent);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.78rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
+      font-size: 0.86rem;
       font-weight: 700;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(2.15rem, 4vw, 2.2rem);
-      line-height: 1.12;
-      letter-spacing: -0.03em;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(2rem, 4vw, 2.55rem);
+      line-height: 1.18;
+      letter-spacing: -0.02em;
       color: var(--stone);
     }
 
     .intro {
-      margin: 22px 0 36px;
-      max-width: 760px;
+      margin: 18px 0 34px;
+      max-width: 820px;
       color: var(--slate);
-      font-size: 1.12rem;
+      font-size: 1.08rem;
+      line-height: 1.75;
     }
 
     .timeline {
       position: relative;
-      margin-top: 36px;
-      padding-left: 28px;
+      margin-top: 32px;
+      padding-left: 26px;
       border-left: 2px solid var(--line);
     }
 
     .timeline-item {
       position: relative;
-      margin: 0 0 34px;
-      padding-left: 28px;
+      margin: 0 0 30px;
+      padding-left: 26px;
     }
 
     .timeline-item:last-child { margin-bottom: 0; }
@@ -87,8 +86,8 @@
       position: absolute;
       left: -37px;
       top: 8px;
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
       background: var(--warm-white);
       border: 3px solid var(--accent);
@@ -96,30 +95,32 @@
 
     h2 {
       margin: 0 0 8px;
-      color: var(--stone);
+      color: var(--accent);
+      font-family: Georgia, 'Times New Roman', serif;
       font-size: 1.28rem;
       line-height: 1.25;
     }
 
-    p { margin: 0 0 14px; }
+    p { margin: 0 0 12px; }
     .timeline-item p:last-child { margin-bottom: 0; }
 
     .today {
-      margin-top: 44px;
-      padding: 28px 30px;
-      border-left: 5px solid var(--accent);
-      background: #f7f4ee;
-      border-radius: 12px;
+      margin-top: 38px;
+      padding: 26px 28px;
+      border-left: 4px solid var(--accent);
+      background: #f3f6f3;
+      border-radius: 8px;
     }
 
-    .today h2 { margin-bottom: 10px; }
+    .today h2 { margin-bottom: 8px; }
 
     @media (max-width: 700px) {
-      .history-section { padding: 32px 14px; }
-      .history-card { padding: 32px 22px; border-radius: 14px; }
-      .timeline { padding-left: 20px; }
-      .timeline-item { padding-left: 20px; }
-      .timeline-item::before { left: -29px; }
+      .history-section { padding: 30px 14px; }
+      .history-card { padding: 30px 22px; }
+      .intro { font-size: 1rem; }
+      .timeline { padding-left: 18px; }
+      .timeline-item { padding-left: 18px; }
+      .timeline-item::before { left: -27px; }
       .today { padding: 22px; }
     }
   </style>
@@ -159,9 +160,7 @@
       <p class="eyebrow">Established History</p>
       <h1 id="history-title">History of Stafford Springs Cemetery</h1>
       <p class="intro">
-        Stafford Springs Cemetery reflects more than two centuries of remembrance, community stewardship,
-        landscape design, and preservation. Its grounds tell the story of the families, leaders, and
-        local history that helped shape the area.
+        Stafford Springs Cemetery reflects more than two centuries of remembrance, community stewardship, landscape design, and preservation. Originating as an early burial ground and substantially redesigned in 1883, the cemetery developed into a historic landscaped setting influenced by the nineteenth-century Rural Cemetery movement. Its winding drives, varied terrain, ponds, monuments, stonework, mature landscape, and historic architecture preserve an important part of Stafford's cultural history.
       </p>
 
       <div class="timeline">
@@ -178,33 +177,41 @@
 
         <article class="timeline-item">
           <h2>Incorporation (1882)</h2>
-          <p>In 1882, the Stafford Springs Cemetery Association was formally incorporated, creating a structured framework for governance and ongoing care.</p>
+          <p>In 1882, the Stafford Springs Cemetery Association was formally incorporated, creating a structured framework for governance, expansion, and ongoing care. The incorporation marked a new phase in the cemetery's development, approximately seventy years after its first known burial.</p>
         </article>
 
         <article class="timeline-item">
           <h2>Landscape Design (1883)</h2>
-          <p>In 1883, Hartford landscape architect J. Alex McClunie redesigned the cemetery, incorporating elements of the rural cemetery movement, including winding drives and naturalistic scenery.</p>
+          <p>In 1883, Hartford landscape architect J. Alex McClunie redesigned the cemetery, introducing elements associated with the nineteenth-century Rural Cemetery movement. The redesign marked a transition from an earlier burial ground toward a more deliberately planned and picturesque cemetery landscape.</p>
+          <p>Winding drives, changes in elevation, naturalistic scenery, vegetation, monuments, views, and water features helped create a setting intended not only for burial, but also for remembrance, contemplation, and visitation. Many of these landscape characteristics remain visible in the cemetery today.</p>
         </article>
 
         <article class="timeline-item">
           <h2>Civil War Memorial (1897)</h2>
-          <p>The cemetery includes a Civil War memorial featuring a historic Rodman Gun, dedicated in 1897 to honor local contributions to the Union cause.</p>
+          <p>The cemetery includes a Civil War memorial featuring a historic Rodman Gun, dedicated in 1897 to honor local contributions to the Union cause. The memorial also reflects the cemetery's long-standing role as a place of civic remembrance and community commemoration.</p>
         </article>
 
         <article class="timeline-item">
           <h2>Early 20th Century Improvements (1912)</h2>
-          <p>Stone entrance features were added in 1912, reinforcing the cemetery's presence while maintaining its historic character.</p>
+          <p>Stone entrance features were added in 1912, creating a more formal entrance to the landscaped grounds while reinforcing the cemetery's historic character and identity. These features remain an important part of the cemetery landscape.</p>
         </article>
 
         <article class="timeline-item">
           <h2>Harwood Memorial Chapel (1929)</h2>
-          <p>The Harwood Memorial Chapel, constructed in 1929, is a Gothic Revival stone structure gifted by Grace E. Harwood in memory of her parents, Charles F. and Ella Harwood. It remains a defining architectural feature of the cemetery.</p>
+          <p>The Harwood Memorial Chapel, constructed in 1929, is a Gothic Revival stone structure gifted by Grace E. Harwood in memory of her parents, Charles F. and Ella Harwood. It remains one of the defining architectural features of the cemetery and an important component of the historic landscape.</p>
+        </article>
+
+        <article class="timeline-item">
+          <h2>Twentieth-Century Expansion (1964-1972)</h2>
+          <p>The cemetery continued to evolve during the twentieth century as additional burial areas were developed to serve the community. Section 16 was extended in 1964, and New Section 1 was established in 1972.</p>
+          <p>These additions demonstrate the cemetery's continuing role as an active burial ground while preserving the character of the older historic landscape.</p>
         </article>
       </div>
 
       <div class="today">
         <h2>The Cemetery Today</h2>
-        <p>Today, Stafford Springs Cemetery continues to serve lot owners while welcoming the public as a place for walking and quiet reflection. The grounds preserve the history of the area, including individuals who contributed to its early development. Through responsible stewardship, preservation, and long-term care, the cemetery remains a lasting and respected part of the community.</p>
+        <p>Today, Stafford Springs Cemetery continues to serve lot owners and families while welcoming the public as a place for walking, quiet reflection, remembrance, and local history. The historic grounds preserve evidence of more than two centuries of community development and stewardship.</p>
+        <p>Recent preservation research has focused on documenting the cemetery's development, architecture, and landscape significance, including its relationship to the nineteenth-century Rural Cemetery movement. Through responsible stewardship, preservation, and long-term care, the Stafford Springs Cemetery Association is working to ensure that this historic landscape remains a lasting and respected part of the community.</p>
       </div>
     </div>
   </section>
