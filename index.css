@@ -191,12 +191,12 @@ header {
   margin-right: 5px;
 }
 .hero h1 {
-  font-size: clamp(2rem, 5.5vw, 3rem);
+  font-size: clamp(2rem, 5.5vw, 2rem);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.5px;
   color: var(--cloud);
-  margin: 0 0 7rem 0;
+  margin: 0 0 3rem 0;
   max-width: 600px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2);
 }
